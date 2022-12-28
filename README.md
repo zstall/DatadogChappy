@@ -53,6 +53,39 @@ Step 3: Create/Clone Flask application inside EC2
     
     ```
     
+- Setup Chappy DB
+
+    Create a user mapping for the ubuntu user to postgres:
+    ```
+    $  sudo vi /etc/postgresql/14/main/pg_ident.conf
+    ```
+    
+    Add an entry mapping ubuntu to postgres:
+    ```
+    # MAPNAME       SYSTEM-USERNAME         PG-USERNAME
+    user1           ubuntu                  postgres
+    ```
+    
+    Add an entry for postgres into the pg_hba.conf
+    ```
+    $  sudo vi /etc/postgresql/14/main/pg_hba.conf
+    ```
+    add:
+    ```
+    # Database administrative login by Unix domain socket
+    local   all             postgres                                md5
+    ```
+    
+    Now we are ready to connect to postgres and set up the db. Login to postgres with the following command:
+    ```
+    psql -U postgres
+    ```
+    
+    First, let's set a password for psotgres:
+    ```
+    ALTER USER postgres PASSWORD '<YOUR NEW PASSWORD>';
+    
+    
     
     
     
