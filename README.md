@@ -177,14 +177,14 @@ Step 3: Create/Clone Flask application inside EC2
     
     and add the following to the location config and make sure to remove 'try_files $uri $uri/ =404;':
     
-    '''
+    ```
             location / {
                 # First attempt to serve request as file, then
                 # as directory, then fall back to displaying a 404.
                 proxy_pass http://fchap/;
                 include proxy_params;
         }
-    '''
+    ```
     
     After setting these variables restart nginx:
     ```
