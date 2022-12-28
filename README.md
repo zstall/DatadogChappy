@@ -118,7 +118,7 @@ Step 3: Create/Clone Flask application inside EC2
     $ sudo apt install gunicorn
     ```
     
- - Test and Run Gunicorn — '$ gunicorn -b 0.0.0.0:8000 fchap:app' . Further modifications are possible, check out the gunicorn docs!
+ - Test and Run Gunicorn — `$ gunicorn -b 0.0.0.0:8000 fchap:app`. Further modifications are possible, check out the gunicorn docs!
     Gunicorn is running (Ctrl + C to exit gunicorn)!
     
     
@@ -150,11 +150,11 @@ Step 3: Create/Clone Flask application inside EC2
     
 - Then enable the service:
 
-    '''
+    ```
     $ sudo systemctl daemon-reload
     $ sudo systemctl start helloworld
     $ sudo systemctl enable helloworld
-    '''
+    ```
 
 ## Step 5: 
     
