@@ -42,14 +42,11 @@ Step 3: Create/Clone Flask application inside EC2
     $ source chp/bin/activate
     
     // Install Flask
-    $ pip install Flask
+    $ pip install -r requirements.txt
     
     // Other important packages for Chappy:
     $ sudo apt-get install postgresql
     $ sudo apt-get install postgresql-contrib
-    $ python3 -m pip install psycopg2-binary
-    $ python3 -m pip install flask-restful
-    $ python3 -m pip install json_log_formatter
     
     ```
     
