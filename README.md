@@ -169,11 +169,11 @@ Step 3: Create/Clone Flask application inside EC2
     '''
     
 - Add the following to the top of the file:
-    '''
+    ```
     upstream fchap {
         server 127.0.0.1:8000
     }
-    '''
+    ```
     
     and add the following to the location config and make sure to remove 'try_files $uri $uri/ =404;':
     
