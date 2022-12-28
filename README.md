@@ -4,6 +4,8 @@ A simple flask app to deploy and run APM and Traces from
 To get the flask app working, I followed this article. I'm going to provide a seperate outline as to get Chappy working there are a few extra steps.
 - Here is the article for reference: https://medium.com/techfront/step-by-step-visual-guide-on-deploying-a-flask-application-on-aws-ec2-8e3e8b82c4f7 
 
+- Download the compressed file and extract it in the `home/ubuntu/` directory of your server and follow the instructions below.
+
 ## Step 1: Create an Ubuntu EC2 on AWS
 
 - Log in to AWS Console.
