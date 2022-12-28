@@ -82,9 +82,9 @@ Step 3: Create/Clone Flask application inside EC2
     Here we are going to setup Postgres, Admin, and pgcrypto:
     ```
     $ ALTER USER postgres PASSWORD '<YOUR NEW PASSWORD>';
-    $ CREATE DATABASE yourdbname;
-    $ CREATE USER youruser WITH ENCRYPTED PASSWORD 'yourpass';
-    $ GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;
+    $ CREATE DATABASE chappy;
+    $ CREATE USER admin WITH ENCRYPTED PASSWORD 'admin';
+    $ GRANT ALL PRIVILEGES ON DATABASE chappy TO admin;
     $ \q
     ```
     Sign in as admin:
